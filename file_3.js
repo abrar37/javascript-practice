@@ -1,4 +1,4 @@
-//  Primitive
+//-------------------------  Primitive (Use Stack Memory) -------------------------
 
 //  7 types : String, Symbol, Boolearn, BigInt, Number, null, undefined,  
 
@@ -18,7 +18,7 @@ console.log(id === anotherId);
 
 
 
-// Reference (Non primitive)
+//------------------------- Reference (Non primitive - Use Heap Memory) -------------------------
 
 // Array, Objects, Functions
 

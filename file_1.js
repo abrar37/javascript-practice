@@ -1,5 +1,5 @@
 const accountId = 14425  // Can not be changeable
-let accountEmail = "abrar@google.com" //can not be changeable out of scope
+let accountEmail = "abrar@mail.com" //can not be changeable out of scope
 var accountPassword = "124cfw" // changeable out of scope
 
 accountCity = "Lahore"
