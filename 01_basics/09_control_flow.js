@@ -14,7 +14,7 @@
 //     console.log(`User Power: ${power}`);   // Block Scope
 // }
 
-// Short Hand Notaion
+//=============== Short Hand Notaion
 // const balance = 1000
 // // if (balance > 500) console.log("Test");
 // // if (balance > 500) console.log("Test"), console.log("Test2"); //Not recommended
@@ -42,7 +42,7 @@ const loggedinFromEmail = true;
 //     console.log(`User Logged in`);
 // }
 
-//======== Switch Case =======
+//=============== Switch Case ===============
 // const month = 3
 // switch (month) {
 //     case 1:
@@ -70,9 +70,10 @@ const loggedinFromEmail = true;
 //   console.log("Don't have User Email");
 // }
 
-//====== falsy values ======
+//=============== falsy values ===============
 // false, 0, -0, BigInt = 0n, "", null, undefined, NaN
-//====== truthy values ======
+
+//=============== truthy values ===============
 //  "0", 'false', " ", [], {}, function(){}
 
 // const userInfo = []

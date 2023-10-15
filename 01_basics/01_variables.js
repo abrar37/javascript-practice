@@ -13,7 +13,7 @@
 
 // console.log(typeof accountId);
 
- //------------- About String ------------
+//=============== About String ===============
 
 //  const name = "Abrar"
 //  const repoCount = 50

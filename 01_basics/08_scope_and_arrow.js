@@ -36,7 +36,7 @@ if (true) {
 }
 // console.log(userName);
 
-// ==============  Intresting   =======================
+//=============== Intresting ===============
 
 // console.log(plusOne(5));
 
@@ -53,7 +53,7 @@ const plusTwo = function(num){       // Expression > a variable hold a function
 }
 
 
-// =========== Arraw Function ==========
+//=============== Arraw Function ===============
 
 const user = {
     userName: "Ahmad",
@@ -83,13 +83,13 @@ const user = {
 // }
 // tea()
 
-// ======== arrow function ======== 
+//=============== arrow function ===============
 // const addTwo = (num1, num2) => {
 //     return num1 + num2
 // }
 
 
-// ======== implicit return ======== 
+//=============== implicit return ===============
 // const addTwo = (num1, num2) => num1 + num2;
 
 // const addTwo = (num1, num2) => (num1 + num2);

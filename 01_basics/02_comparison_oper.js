@@ -33,7 +33,7 @@ let isLoggedIn = 0
 let booleanConversion = Boolean(isLoggedIn)
 // console.log(booleanConversion);
 
-// ************** Operations ******************
+//=============== Operations ===============
 let value = 3
 let negValue = -value
 // console.log(negValue);

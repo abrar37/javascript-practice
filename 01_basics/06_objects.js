@@ -1,7 +1,7 @@
-//---------- Singleton ------------
+//=============== Singleton ===============
 // Object.create
 
-//---------- Object literals ---------
+//=============== Object literals ===============
 const userSybmol = Symbol("outerKey");
 
 const jsUser = {

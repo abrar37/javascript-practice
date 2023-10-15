@@ -1,4 +1,4 @@
-// array
+//=============== array ===============
 
 const myArr = [0, 1, 2, 3, 4, 5]
 const heros = ["Shaktiman", "Spiderman", "Hulk"]
@@ -23,7 +23,7 @@ const myArr2 = new Array(1, 2, 3, 4)
 // const newArr = myArr.join() // Array converted into string
 // console.log(newArr);
 
-// ---------- Slice, Splice ------------
+//=============== Slice, Splice ===============
 // const arrA = [0, 1, 2, 3, 4, 5]
 // console.log("Orignal ", arrA);
 
@@ -35,7 +35,7 @@ const myArr2 = new Array(1, 2, 3, 4)
 // console.log(arrA.length)
 
 
-// -----------------------------------------------
+//=============================================
 const marvelHeros = ["thor", "ironman", "spiderman"]
 const dcHeros = ["superman", "flash", "batman"]
 

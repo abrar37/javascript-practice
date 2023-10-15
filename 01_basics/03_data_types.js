@@ -1,4 +1,4 @@
-//-------------------------  Primitive (Use Stack Memory) -------------------------
+//=============== Primitive (Use Stack Memory) ===============
 
 //  7 types : String, Symbol, Boolearn, BigInt, Number, null, undefined,  
 
@@ -17,7 +17,7 @@
 // const bigNumber = 3456543576654356754n
 
 
-//*************  Using Stack Memory - Change Copy, Not Refrence
+//===============  Using Stack Memory - Change Copy, Not Refrence ===============
 // let firstName = "abrar"
 // let lastName = firstName
 // lastName = "Arqam"
@@ -26,7 +26,7 @@
 
 
 
-//------------------------- Reference (Non primitive - Use Heap Memory) -------------------------
+//=============== Reference (Non primitive - Use Heap Memory) ===============
 
 // Array, Objects, Functions
 
@@ -46,7 +46,7 @@
 // console.log(typeof heros);
 
 
-//*************  Using Heap Memory - Change Original Refrence
+//=============== Using Heap Memory - Change Original Refrence ===============
 let userOne = {
     email : "onw@user.mail.com",
     upi : "user@123"

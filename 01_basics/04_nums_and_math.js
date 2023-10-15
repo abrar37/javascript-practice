@@ -11,7 +11,7 @@ const hundreds = 1000000
 // console.log(hundreds.toLocaleString("en-IN"));
 
 
-//------------------------------- Maths -------------------------------
+//=============== Maths ===============
 // console.log(Math);
 // console.log(Math.abs(-4));
 // console.log(Math.round(4.5));
@@ -30,7 +30,7 @@ const hundreds = 1000000
 // console.log(Math.floor(Math.random() * (max - min + 1) + min))
 
 
-//------------------------------- Date & Time -------------------------------
+//=============== Date & Time ===============
 
 let myDate = new Date()
 

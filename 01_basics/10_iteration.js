@@ -1,4 +1,4 @@
-//========= for loop =========
+//=============== for loop ===============
 
 for (let index = 0; index <= 10; index++) {
     const element = index;
@@ -43,7 +43,7 @@ for (let index = 1; index <= 10; index++) {
 }
 
 
-//========= while loop =========
+//=============== while loop ===============
 
 // let i = 0
 // while (i <= 10) {
@@ -71,7 +71,7 @@ for (const arr of myArray) {
 }
 
 
-//========= for of loop =========
+//=============== for of loop ===============
 
 const arr2 =[ 1, 2, 3, 4, 5]
 for (const num of arr2) {
