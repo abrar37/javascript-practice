@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing images</h2>
+    <div>
+        <ul id="images">
+            <!-- <li><img id="wolfs"  src="https://source.unsplash.com/300x150/?nature,wolfs" alt="wolfs" onclick="alert('wolfs')"></li> -->
+            <li><img id="winter" src="https://source.unsplash.com/300x150/?nature,winter" alt="winter"></li>
+            <li><img id="summer" src="https://source.unsplash.com/300x150/?nature,summer" alt="summer"></li>
+            <li><img id="autumn" src="https://source.unsplash.com/300x150/?nature,autumn" alt="autumn"></li>
+            <li><img id="spring" src="https://source.unsplash.com/300x150/?nature,spring" alt="spring"></li>
+            <li><a id="unsplash" style="color: aliceblue;" href="https://source.unsplash.com/700x500/?technology">Unsplash</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    // attachEvent()
+
+    // jQuery - on()
+
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+    // document.getElementById('winter').onclick = function() {
+    //     alert("Winter Activated")
+    // }
+
+    // document.getElementById('summer').addEventListener('click', function(e){
+    //     // alert("Summer Activated");
+    //     console.log(e);
+    // }, false)
+
+
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("Clicked inside the ul");
+    // }, false)
+
+
+
+    // false means - Event Propagation in Bubbling up format - default
+    // true means - Event Propagation in Capturing mode format
+
+//    document.getElementById('winter').addEventListener('click', function(e){
+//         console.log("Winter Activated");
+//         e.stopPropagation()
+//     }, true)
+
+    // document.getElementById('unsplash').addEventListener('click', function(e){
+    //     e.preventDefault()
+    //     e.stopPropagation()
+    //     console.log("Unslpash Clicked");
+    // }, true)
+
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        // console.log(e.target.parentNode);
+        // console.log(e.target.tagName);
+        console.log(e.target.id);
+
+        if (e.target.tagName === 'IMG') {
+            
+            let removeImg = e.target.parentNode
+            removeImg.remove()
+        }
+
+        // removeImg.parentNode.removeChild(Img)
+    }, false)
+
+</script>
+</html>

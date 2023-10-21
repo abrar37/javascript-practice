@@ -1,0 +1,24 @@
+body {
+    margin: 0 10%;
+    font-family: system-ui, sans-serif;
+    color: black;
+    background-color: white;
+  }
+.btn{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+#gray{
+    background-color: gray;
+}
+#white{
+    background-color: white;
+}
+#orange{
+    background-color: orange;
+}
+#blue{
+    background-color: blue;
+}
