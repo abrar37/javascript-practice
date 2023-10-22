@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Methods</title>
+</head>
+<body style="background-color: #414141; color: #fff;">
+    <h1>Async JS</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("Abrar");
+    // }, 3000)
+
+
+    // callName = function(){
+    //     console.log("Abrar");
+    // }
+    // setTimeout(callName, 2000)
+
+    // changeText = function(){
+    //     document.querySelector('h1').innerHTML = "JavaScrip Practice"
+    // }
+    // const changeHeading = setTimeout(changeText, 2000)
+
+    // // clearTimeout(changeHeading)
+
+    // document.querySelector('#stop').addEventListener('click', function(){
+    //     clearTimeout(changeHeading)
+    //     console.log("Stopped");
+    // })
+
+    // setInterval(function(){
+    //     console.log("Js and Tes", Date.now());
+    // }, 1000)
+
+
+    const sayDate = function (str) {
+        console.log(str, "The Time is: ", new Date());
+    }
+
+    // const intervelId = setInterval(sayDate, 3000, "Hi")
+    // clearInterval(intervelId)
+
+    let startSayDate;
+
+    document.querySelector("#start").addEventListener('click', function() {
+        console.log("sayDate Started:");
+        startSayDate = setInterval(sayDate, 1000, "Hi")
+    })
+
+    document.querySelector("#stop").addEventListener('click', function() {
+        clearInterval(startSayDate)
+        console.log("sayDate Stopped.");
+    })
+
+</script>
+</html>
