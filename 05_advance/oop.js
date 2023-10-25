@@ -19,11 +19,19 @@ function User(userName, loginCount, isLoggedIn) {
     this.loginCount = loginCount;
     this.isLoggedIn = isLoggedIn
 
+    this.greeting = function(){
+        console.log(`Wellcome ${this.userName}`);
+    }
+
     // return this
 }
 
 const userOne = new User("Arqam", 4, true)
 const userTwo = new User("Ali", 7, false)
 
-console.log(userOne);
-console.log(userTwo);
+// console.log(userOne);
+// console.log(userTwo);
+
+console.log(userOne.constructor);
+
+console.log(userTwo instanceof User);
