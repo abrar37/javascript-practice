@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number</title>
+</head>
+<style>
+    body{
+        background-color: #212121;
+        color: #fafafa;
+    }
+    .center{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    #submitbtn{
+        margin-top: 10px;
+    }
+    #result{
+        text-align: center;
+    }
+    #allGuess{
+        background-color: gray;
+        padding: 5px;
+    }
+</style>
+<body>
+    <div class="center">
+        <h2>Guess the number between 1 and 50</h2>
+        <form>
+            <input type="number" id="userInput">
+            <button id="submitbtn" type="submit">Submit Guess</button>
+        </form>
+        <h3 id="result"></h3>
+        <p>You Previous Guess: <span id="all-guesses"></span></p>
+        <p>Attempts left: <span id="attempts">10</span></p>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
