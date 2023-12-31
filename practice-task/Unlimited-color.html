@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlimited Color</title>
+    <style>
+        body {
+            background-color: #212121;
+            color: #fff;
+
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h2>Change Background Color</h2>
+        <div>
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+        </div>
+    </div>
+
+    <script>
+        const randomColor = function () {
+            const hex = "0123456789ABCDEF";
+            let color = "#"
+            for (let i = 1; i <= 6; i++) {
+                color += hex[Math.floor(Math.random() * 16)]
+            }
+            return color
+        }
+        // console.log(randomColor());
+        let bgInterval;
+        const startBGC = function () {
+            if (!bgInterval) {
+                bgInterval = setInterval(() => {
+                    document.body.style.backgroundColor = randomColor();
+                }, 1000)
+            }
+        }
+
+        const stopBGC = function () {
+            clearInterval(bgInterval)
+            bgInterval = null;
+        }
+
+        document.querySelector("#start").addEventListener("click", startBGC)
+        document.querySelector("#stop").addEventListener("click", stopBGC)
+    </script>
+</body>
+
+</html>

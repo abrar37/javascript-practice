@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlimited Color</title>
+    <style>
+        body {
+            background-color: #212121;
+            color: #fff;
+
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        table{
+            border: 1px solid #fff;
+        }
+        th, td{
+            border: 1px solid #fff;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h2>Press Keys to watch value</h2>
+    </div>
+
+    <script>
+        const mainDiv = document.querySelector(".main");
+
+        window.addEventListener('keydown', (e)=>{
+            mainDiv.innerHTML = `
+            <table>
+                <tr>
+                    <th>Key</th>
+                    <th>KeyCode</th>
+                    <th>Code</th>
+                </tr>
+                <tr>
+                    <td>${e.key === " " ? "space": e.key}</td>
+                    <td>${e.keyCode}</td>
+                    <td>${e.code}</td>
+                </tr>
+            </table>
+          `
+        })
+    </script>
+</body>
+
+</html>
